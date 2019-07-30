@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/BelfordZ/semantic-release-template-plugin/compare/1.0.0...1.0.1) (2019-07-30)
+
+
+### Bug Fixes
+
+* dont update package lock ([baa106a](https://github.com/BelfordZ/semantic-release-template-plugin/commit/baa106a))
+
 # 1.0.0 (2019-07-30)
 
 
