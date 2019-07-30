@@ -14,23 +14,46 @@ npm install --save-dev semantic-release-template-plugin
 
 ### Adding to your .releaserc
 
-```
+```json
 {
-  ...
+  "tagFormat": "${version}",
+  "branch": "master",
   "plugins": [
-    ...,
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/git",
+    "@semantic-release/npm",
+    "semantic-release-template-plugin"
+  ],
+  "verifyConditions": [
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/git",
+    "@semantic-release/npm",
     {
       "path": "semantic-release-template-plugin",
-      "documentLocation": "./my-template.txt",
+      "msg": "template plugin",
+      "documentLocation": "foo-test.txt",
       "templateData": {
         "abc": 123
-
       }
     }
-    ...
   ],
-  "verifyConditions": ["semantic-release-template-plugin"],
-  "prepare": ["semantic-release-template-plugin"]
+  "prepare": [
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/npm",
+    {
+      "path": "semantic-release-template-plugin",
+      "msg": "template plugin",
+      "documentLocation": "foo-test.txt",
+      "templateData": {
+        "abc": 123
+      }
+    }
+  ]
 }
 ```
 
