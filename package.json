@@ -23,14 +23,6 @@
     "typescript": "^3.5.1"
   },
   "dependencies": {
-    "@qiwi/semantic-release-gh-pages-plugin": "^1.10.4",
-    "@semantic-release/changelog": "^3.0.4",
-    "@semantic-release/commit-analyzer": "^6.2.0",
-    "@semantic-release/git": "^7.0.16",
-    "@semantic-release/github": "^5.4.2",
-    "@semantic-release/npm": "^5.1.13",
-    "@semantic-release/release-notes-generator": "^7.2.1",
-    "lodash": "^4.17.15",
-    "semantic-release": "^15.13.18"
+    "lodash": "^4.17.15"
   }
 }
