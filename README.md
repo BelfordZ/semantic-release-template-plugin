@@ -12,6 +12,12 @@ The template will always be passed the `version`.
 npm install --save-dev semantic-release-template-plugin
 ```
 
+### Add a template file
+
+```bash
+echo "hello im a sandwich <%= version %> oh yeah and also <%= abc %>" > foo-text.txt
+```
+
 ### Adding to your .releaserc
 
 ```json
