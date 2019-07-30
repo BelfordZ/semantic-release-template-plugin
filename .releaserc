@@ -36,5 +36,15 @@
         "abc": 123
       }
     }
+  ],
+   "publish": [
+    "@semantic-release/github",
+    "@semantic-release/npm"
+  ],
+  "success": [
+    "@semantic-release/github"
+  ],
+  "fail": [
+    "@semantic-release/github"
   ]
 }
