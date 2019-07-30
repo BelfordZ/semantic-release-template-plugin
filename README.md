@@ -9,7 +9,7 @@ The template will always be passed the `version`.
 ### Installation
 
 ```bash
-npm install --save-dev @etclabscore/semantic-release-template-plugin
+npm install --save-dev semantic-release-template-plugin
 ```
 
 ### Adding to your .releaserc
@@ -20,7 +20,7 @@ npm install --save-dev @etclabscore/semantic-release-template-plugin
   "plugins": [
     ...,
     {
-      "path": "@etclabscore/semantic-release-template-plugin",
+      "path": "semantic-release-template-plugin",
       "documentLocation": "./my-template.txt",
       "templateData": {
         "abc": 123
@@ -29,8 +29,8 @@ npm install --save-dev @etclabscore/semantic-release-template-plugin
     }
     ...
   ],
-  "verifyConditions": ["@etclabscore/semantic-release-template-plugin"],
-  "prepare": ["@etclabscore/semantic-release-template-plugin"]
+  "verifyConditions": ["semantic-release-template-plugin"],
+  "prepare": ["semantic-release-template-plugin"]
 }
 ```
 

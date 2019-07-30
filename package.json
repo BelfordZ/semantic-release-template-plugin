@@ -1,6 +1,6 @@
 {
-  "name": "@etclabscore/pristine-typescript",
-  "version": "1.0.0",
+  "name": "semantic-release-template-plugin",
+  "version": "0.0.0-semantic-dev",
   "description": "",
   "main": "build/index.js",
   "publishConfig": {
