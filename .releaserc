@@ -7,22 +7,34 @@
     "@semantic-release/changelog",
     "@semantic-release/github",
     "@semantic-release/git",
-    "@semantic-release/npm"
+    "@semantic-release/npm",
+    "semantic-release-template-plugin"
   ],
   "verifyConditions": [
     "@semantic-release/changelog",
-    "@semantic-release/npm",
-    "@semantic-release/git",
-    "@semantic-release/github"
-  ],
-  "publish": [
     "@semantic-release/github",
-    "@semantic-release/npm"
+    "@semantic-release/git",
+    "@semantic-release/npm",
+    {
+      "path": "semantic-release-template-plugin",
+      "msg": "template plugin",
+      "documentLocation": "foo-test.txt",
+      "templateData": {
+        "abc": 123
+      }
+    }
   ],
-  "success": [
-    "@semantic-release/github"
-  ],
-  "fail": [
-    "@semantic-release/github"
+  "prepare": [
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/npm",
+    {
+      "path": "semantic-release-template-plugin",
+      "msg": "template plugin",
+      "documentLocation": "foo-test.txt",
+      "templateData": {
+        "abc": 123
+      }
+    }
   ]
 }
